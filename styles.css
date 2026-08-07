@@ -83,6 +83,23 @@ body {
     margin-left: 0.5rem;
 }
 
+.beta-contact-cta {
+    background: #ffffff;
+    color: #1d4ed8;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    padding: 0.4rem 0.85rem;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.25);
+}
+
+.beta-contact-cta:hover,
+.beta-contact-cta:focus-visible {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
 .beta-pro-note {
     color: var(--text-secondary);
     font-size: 0.78rem;
@@ -161,13 +178,15 @@ button, input, select, textarea {
 
 /* Header Navbar */
 .app-header {
-    height: 56px;
+    min-height: 72px;
+    height: auto;
     background-color: var(--bg-secondary);
     border-bottom: 1px solid var(--border-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1.25rem;
+    gap: 0.85rem;
+    padding: 0.5rem 1.25rem;
     z-index: 10;
     flex-shrink: 0;
 }
@@ -176,6 +195,7 @@ button, input, select, textarea {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    flex: 0 0 auto;
 }
 
 .logo-icon {
@@ -213,7 +233,22 @@ button, input, select, textarea {
 .header-actions {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    flex: 1 1 0;
+    min-width: 0;
+    flex-wrap: wrap;
+    align-content: center;
     gap: 0.5rem;
+}
+
+@media (max-width: 1180px) {
+    .app-header {
+        align-items: flex-start;
+    }
+
+    .header-actions {
+        justify-content: flex-start;
+    }
 }
 
 .divider-vertical {
@@ -1292,6 +1327,19 @@ button, input, select, textarea {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
+
+.modal-pro-intro-card {
+    width: 620px;
+    max-width: 94vw;
+    max-height: min(760px, 92vh);
+}
+
+.modal-pro-intro-body {
+    gap: 0.8rem;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
 }
 
 .modal-header {
