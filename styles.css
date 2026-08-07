@@ -425,6 +425,31 @@ button, input, select, textarea {
     margin-bottom: 0.6rem;
 }
 
+.section-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.btn-add-document {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: 1px solid var(--accent-primary);
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    color: var(--accent-primary);
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.btn-add-document:hover,
+.btn-add-document:focus-visible {
+    background: var(--accent-primary);
+    color: #ffffff;
+}
+
 .section-header h2 {
     font-size: 0.85rem;
     text-transform: uppercase;
