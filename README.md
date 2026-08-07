@@ -24,7 +24,7 @@ Las copias vendorizadas se comparan por SHA-256 con las dependencias fijadas en
 ## Contacto
 
 El botón para solicitar la versión completa abre un mensaje dirigido a
-`santiherben@gmail.com`, con asunto y texto inicial preparados. Si cambia el
+`analizadorcualiuy@gmail.com`, con asunto y texto inicial preparados. Si cambia el
 canal comercial, actualice `data-contact-url` en `index.html`.
 
 Genere la carpeta publicable desde el directorio Pro:
